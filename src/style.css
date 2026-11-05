@@ -1,0 +1,497 @@
+.micro {
+  font:
+    9px/1.5 "Courier New",
+    monospace;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+.wearable-preview {
+  position: relative;
+  width: 100%;
+  min-height: 410px;
+  background: radial-gradient(ellipse at 70% 0%, #fcfff5bb, #cce4d280 80%);
+  overflow: hidden;
+}
+.preview-topbar {
+  position: absolute;
+  left: 23px;
+  right: 23px;
+  top: 20px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 8px;
+  letter-spacing: 0.1px;
+  color: #73927a;
+}
+.preview-topbar > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.preview-topbar i {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #9fbc82;
+}
+.preview-bottom {
+  position: absolute;
+  left: 23px;
+  right: 23px;
+  bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 8px;
+  color: #86a18b;
+}
+.preview-bottom > div {
+  display: flex;
+  gap: 15px;
+}
+.preview-bottom button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px;
+  color: #64876c;
+  font-size: 9px;
+}
+.preview-bottom button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.wearable-preview {
+  background: radial-gradient(ellipse at 25% 30%, #f6fbe9dd, #d4e4cc88);
+  min-height: 410px;
+}
+.wearable-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 12px;
+  align-items: center;
+  padding: 65px 30px 70px;
+}
+.watch-model {
+  position: relative;
+  height: 235px;
+  width: 120px;
+  justify-self: center;
+  transform: rotate(-12deg);
+  filter: drop-shadow(6px 12px 12px #4a76532a);
+}
+.watch-band {
+  position: absolute;
+  inset: -4px 25px;
+  background: linear-gradient(
+    90deg,
+    #b1c8a3,
+    #deebcd 35%,
+    #bfd3ae 70%,
+    #9bb490
+  );
+  border-radius: 22px;
+  box-shadow: inset 0 0 0 1px #eaf3dc;
+}
+.watch-face {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  width: 120px;
+  height: 145px;
+  background: linear-gradient(140deg, #e4eddb, #a9c2a3 50%, #e1ebd7);
+  border-radius: 32px;
+  border: 2px solid #f5f9e8;
+  padding: 15px 11px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  isolation: isolate;
+  box-shadow: inset 0 0 0 3px #c0d4b5;
+}
+.watch-face:before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  background: linear-gradient(145deg, #ecf7db, #d1e4c3);
+  border-radius: 24px;
+  z-index: -1;
+  border: 1px solid #fff8;
+}
+.watch-face > span {
+  font-size: 8px;
+  color: #729477;
+  letter-spacing: 1px;
+}
+.watch-face > svg:not(:last-child) {
+  margin-top: 7px;
+  color: #719e76;
+}
+.watch-face strong {
+  font-size: 29px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -1px;
+  color: #4b7e59;
+}
+.watch-face small {
+  font-size: 6px;
+  color: #8faa8c;
+  letter-spacing: 2px;
+}
+.watch-face > svg:last-child {
+  width: 75px;
+  height: 25px;
+  margin-top: 3px;
+}
+.watch-face > svg:last-child path {
+  fill: none;
+  stroke: #81a878;
+  stroke-width: 1;
+}
+.watch-crown {
+  position: absolute;
+  right: -5px;
+  top: 91px;
+  width: 5px;
+  height: 20px;
+  border-radius: 0 3px 3px 0;
+  background: #b5c8a5;
+}
+.wearable-feed {
+  min-width: 0;
+}
+.feed-label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 9px;
+  color: #6f9271;
+}
+.feed-label > svg:last-child {
+  margin-left: auto;
+  color: #92b182;
+}
+.bpm-readout {
+  display: flex;
+  gap: 9px;
+  align-items: baseline;
+  margin-top: 14px;
+}
+.bpm-readout strong {
+  font-weight: 350;
+  font-size: 54px;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+.bpm-readout span {
+  font-size: 9px;
+  color: #7b997a;
+}
+.wearable-waveform {
+  width: 100%;
+  height: 80px;
+  margin: 5px 0;
+}
+.wearable-waveform path {
+  fill: none;
+  stroke: #79a981;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+}
+.sample-insight {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  color: #74936e;
+  font-size: 8px;
+}
+.wearable-slider {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  right: 25px;
+}
+.wearable-slider label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  color: #7b9879;
+  margin-bottom: 10px;
+}
+.wearable-slider label span {
+  opacity: 0.75;
+}
+.wearable-slider input {
+  width: 100%;
+  height: 3px;
+  accent-color: #86aa75;
+  cursor: pointer;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .wearable-layout {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 5px;
+  }
+  .watch-model {
+    transform: rotate(-12deg) scale(0.86);
+    width: 110px;
+  }
+  .bpm-readout strong {
+    font-size: 45px;
+  }
+}
+@media (max-width: 700px) {
+  .wearable-preview {
+    min-height: 335px;
+  }
+  .preview-topbar {
+    left: 17px;
+    right: 17px;
+    top: 16px;
+    font-size: 7px;
+  }
+  .preview-bottom {
+    left: 17px;
+    right: 17px;
+    bottom: 14px;
+    font-size: 7px;
+  }
+  .preview-bottom button {
+    font-size: 8px;
+  }
+  .wearable-layout {
+    padding: 55px 13px 60px;
+    grid-template-columns: 0.8fr 1.15fr;
+    height: 335px;
+    gap: 4px;
+  }
+  .watch-model {
+    transform: rotate(-12deg) scale(0.78);
+    height: 235px;
+    width: 108px;
+  }
+  .watch-face {
+    width: 115px;
+  }
+  .bpm-readout strong {
+    font-size: 44px;
+  }
+  .feed-label {
+    font-size: 8px;
+  }
+  .feed-label > svg {
+    width: 11px;
+  }
+  .wearable-waveform {
+    height: 65px;
+  }
+  .sample-insight {
+    font-size: 7px;
+    gap: 5px;
+  }
+  .wearable-slider {
+    bottom: 20px;
+    left: 19px;
+    right: 19px;
+  }
+  .wearable-slider label {
+    font-size: 7px;
+  }
+}
+.wearable-preview {
+  min-height: 440px;
+}
+.wearable-layout {
+  padding-top: 80px;
+  padding-bottom: 85px;
+}
+@media (max-width: 1100px) {
+  .wearable-preview {
+    min-height: 410px;
+  }
+}
+@media (max-width: 700px) {
+  .wearable-preview {
+    min-height: 335px;
+  }
+  .wearable-layout {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+}
+.preview-bottom button[aria-pressed="true"] {
+  background: #d8edb0;
+  color: #14523d;
+  border-radius: 4px;
+} /* Standalone project shell */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background:
+    radial-gradient(ellipse at 90% 0%, #c2dfbd, transparent 55%), #f5f1e5;
+  color: #084b3d;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+button,
+a,
+input,
+select {
+  touch-action: manipulation;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #258a68;
+  outline-offset: 4px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+.lab-header,
+.lab-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1120px;
+  margin: auto;
+  padding: 28px 32px;
+  font-size: 12px;
+}
+.lab-header > a:first-child {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+.lab-header > a:first-child span {
+  color: #e69a7b;
+}
+.lab-header {
+  border-bottom: 1px solid #07544326;
+}
+.standalone-main {
+  max-width: 1020px;
+  margin: 65px auto 70px;
+  padding: 0 32px;
+}
+.eyebrow {
+  font: 9px monospace;
+  letter-spacing: 0.18em;
+  color: #3b7b58;
+}
+.standalone-main h1 {
+  font-size: clamp(44px, 7.5vw, 88px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.065em;
+  margin: 20px 0;
+}
+.standalone-intro {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 650px;
+  margin-bottom: 40px;
+}
+.experiment-wrap {
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid #ffffffbb;
+  box-shadow: 0 25px 75px #06433320;
+}
+.standalone-note {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #51745c;
+  max-width: 740px;
+  margin-top: 24px;
+}
+.lab-footer {
+  border-top: 1px solid #07544326;
+}
+.world-preview,
+.wearable-preview {
+  min-height: 530px;
+}
+.island-scene {
+  height: 520px;
+}
+.wearable-layout {
+  padding: 100px 60px;
+}
+.wearable-feed {
+  max-width: 390px;
+}
+.watch-model {
+  transform: rotate(-12deg) scale(1.25);
+}
+.micro {
+  font: 9px monospace;
+  letter-spacing: 0.16em;
+}
+.world-preview button {
+  border: 0;
+  background: transparent;
+}
+.preview-bottom {
+  bottom: 24px;
+}
+.wearable-slider input {
+  height: 12px;
+}
+.world-preview .island-scene:focus {
+  outline: 2px solid #217c62;
+  outline-offset: -3px;
+}
+@media (max-width: 600px) {
+  .standalone-main {
+    margin-top: 45px;
+    padding: 0 20px;
+  }
+  .lab-header,
+  .lab-footer {
+    padding: 22px 20px;
+  }
+  .standalone-intro {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+  .experiment-wrap {
+    border-radius: 12px;
+  }
+  .world-preview,
+  .wearable-preview {
+    min-height: 400px;
+  }
+  .island-scene {
+    height: 390px;
+  }
+  .wearable-layout {
+    padding: 75px 20px;
+    grid-template-columns: 1fr 1.4fr;
+  }
+  .watch-model {
+    transform: rotate(-12deg) scale(0.9);
+  }
+  .lab-footer {
+    font-size: 10px;
+  }
+  .standalone-main h1 {
+    font-size: clamp(38px, 9.5vw, 60px);
+  }
+}
