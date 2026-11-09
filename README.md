@@ -1,5 +1,7 @@
 # Wearable Signal Lab
 
+**[Download & run locally](LOCAL.md)** — a short guide and ready-to-run ZIP.
+
 An interactive interface study for making a wearable signal understandable. Change simulated activity and watch the sample heart-rate readout, trace, and interface respond.
 
 [Live portfolio preview](https://rishitpradhan.com/projects/drip/) · [Rishit Pradhan](https://rishitpradhan.com)
